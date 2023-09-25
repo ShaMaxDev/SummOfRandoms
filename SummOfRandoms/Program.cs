@@ -13,10 +13,12 @@ namespace SummOfRandoms
             Random rand = new Random();
             int number = rand.Next(1, 101);
             int summ = 0;
+            int multiplicity1 = 5;
+            int multiplicity2 = 3;
 
             for (int i = number; i > 0; i--) 
             {
-                if (i % 5 == 0 || i % 3 == 0) 
+                if (i % multiplicity1 == 0 || i % multiplicity2 == 0) 
                 {
                     summ = summ + i;
                 }
