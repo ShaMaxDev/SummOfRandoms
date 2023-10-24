@@ -10,11 +10,14 @@ namespace SummOfRandoms
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
-            int number = rand.Next(1, 101);
+            Random Random = new Random();
+            int topLimit = 101;
+            int bottomLimit = 1;
             int summ = 0;
             int multiplicity1 = 5;
             int multiplicity2 = 3;
+            int number = Random.Next(bottomLimit, topLimit);
+
 
             for (int i = number; i > 0; i--) 
             {
@@ -23,7 +26,8 @@ namespace SummOfRandoms
                     summ = summ + i;
                 }
             }
-                    Console.WriteLine(summ); 
+
+             Console.WriteLine(summ); 
         }
     }
 }
